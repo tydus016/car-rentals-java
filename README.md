@@ -17,8 +17,39 @@ Tony's Garrage - Car Rentals is an Open Source online rental bookings applicatio
 <li>Find these codes and replace it with your own database connection info.</li>
 </ol>
    <img src="https://snipboard.io/n1tvsm.jpg">
-
- ## More about of the developer
+   
+ ## Short Code Documentation
+ <ol>
+ <li>User Registration - Every users has two account types in MYSQL users table. <b><i>account_type = 0 & account_type = 1</i></b> 0 is for regular users or customers and 1 is for admin users.<br>
+ A user that register's through Register Frame is automatically marked as <b>account_type = 0</b> since it's only purpose if for customers who wants to register. When adding a new Admin acount, there are two ways on how to do it. The first way is to use the default admin account provided inside the SQL file we provided. <br><br>
+ <b>Default Admin Account</b><br>
+ Username: admin<br>
+ Password: 123<br><br>
+ And once you are in the Admin Dashboard, click the <b>Add new admin</b> button and fill up the form. The second way is to bypass to the <b>PHP my Admin database</b>
+ directly and insert new data for <b>username and password</b> column and set the <b>account_type</b> to 1.
+ </li>
+ <li>
+ User Login - The user login for both customer account and admin account is just one. The program will automatically detect which kind of account type is the user trying to login. Customer account will always redirect to Home Frame and for Admin account will also redirect to Admin dashboard. We do this because we dont want unauthorized users to get access to the Admin side of the application.
+ </li>
+ <br>
+ The implemtation of the codes in this program is very precise, that everything you see in the GUI is easy to understand. Just explore!
+ </ol>
+ 
+  ## Renting Guide
+  
+  <img src="https://snipboard.io/e0tBOH.jpg">
+  <ol>
+  <li>Select a car type</li>
+  <li>Select a car you like</li>
+  <li>Click view details for to expand car information</li>
+  <li>Click rent button</li>
+  <li>Fill up the form data</li>
+  <li>Click confirm details to see the final payment details.</li>
+  <li>Select a payment type you like.</li>
+  </ol>
+   Once you successfully rent a car, you can view the information you rented under the dropdown account tab in the upper right and click history.
+   
+ ## Developer
 
 This application is developed and powered by <a href="http://nextlvl.tech/" target="_blank">NEXT LEVEL TECHNOLOGY</a>. NEXT LEVEL TECHNOLOGY is a freelance Web / Software application servicing in affordable prices.
 We also provide some open source application such as this one.
